@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/state-diagram
+state x <<choice>>
+
+[*] -> Created
+Created -> Reserved
+Reserved -> x
+x -> ReadyToPayment:"Neflex подтвердил"
+x -> Created:"ЦТ  отсутствует"
+ReadyToPayment -> Paied
+@enduml

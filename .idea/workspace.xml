@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0b353ac-1bb4-4fb2-a338-d2f7a291be4e" name="Changes" comment="added ex">
+    <list default="true" id="c0b353ac-1bb4-4fb2-a338-d2f7a291be4e" name="Changes" comment="ex SMM">
+      <change afterPath="$PROJECT_DIR$/Цифровые товары ММ/digit_state.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Цифровые товары ММ/siquence.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Цифровые товары ММ/siquence.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Цифровые товары ММ/с4.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Цифровые товары ММ/с4.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,7 @@
         <option value="Salt Wireframe" />
         <option value="UML Component" />
         <option value="UML Sequence" />
+        <option value="UML State" />
       </list>
     </option>
   </component>
@@ -43,7 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "DefaultPlantUmlFileTemplate": "UML State",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/Users/apple/SA/pythonProject1",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
@@ -94,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738852818241</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ex SMM">
+      <option name="closed" value="true" />
+      <created>1738857276558</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738857276558</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="added ex" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ex" />
+    <MESSAGE value="ex SMM" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex SMM" />
   </component>
 </project>
