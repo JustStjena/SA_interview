@@ -1,0 +1,18 @@
+@startuml
+!include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+Person(User,User)
+System_Boundary(Internal,"Внутренний контур"){
+System(Front,"Витрина")
+System(Catalog,"Каталог")
+System(Processing,"Операции")
+}
+System_Ext(Netflix,"Netflix")
+
+User -> Front
+Front -> Catalog
+Processing -Up-> Catalog
+Front -> Processing
+Processing -> Netflix
+Netflix -> Catalog: данные для карточек
+
+@enduml

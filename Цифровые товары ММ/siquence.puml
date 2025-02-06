@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Actor User
+participant Front
+'System(Front,"Витрина")
+'System(Catalog,"Каталог")
+'System(Processing,"Операции")
+
+== Получение данных для карточек ==
+Netflix -> Catalog: данные для карточек
+note right
+GET host/v1/items
+end note
+== Заказ ЦТ ==
+User -> Front
+Front -> Catalog
+Processing -> Catalog
+Front -> Processing
+Processing -> Netflix: PATCH host/v1/items/{item_id}/buy
+
+@enduml

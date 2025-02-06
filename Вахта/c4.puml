@@ -1,0 +1,29 @@
+@startuml
+!include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(Oper,Operator)
+Person(Dispatcher, Dispatcher)
+System_Boundary(Vahta, Vahta){
+Container(Web, Web,"")
+Container(PS, planning_service,"")
+Container(TS, transport_service,"")
+ContainerDb(ts_db, DB,"")
+ContainerDb(ps_db, DB,"")
+}
+System_Ext(MDS,MDS)
+System_Ext(auth,Auth_service)
+System_Ext(check,Check_service)
+Rel(Oper,Web,"планирование смен")
+Rel(PS,ps_db," ")
+Rel(TS,ts_db," ")
+Rel(MDS,PS,"Данные о рабочих")
+Rel(MDS,TS,"Данные о транспорте")
+Rel(Web,PS,"планирование смен")
+Rel_L(PS,TS," ")
+Rel(Dispatcher,Web,"планирование рейсов")
+BiRel(Web,TS,"планирование рейсов")
+Rel(check,TS,"данные кто пришел")
+Rel(PS,auth," ")
+Rel(TS,auth," ")
+Rel(Web,auth," ")
+@enduml
