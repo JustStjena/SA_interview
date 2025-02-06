@@ -2,17 +2,21 @@
 !include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 Person(User,User)
 System_Boundary(Internal,"Внутренний контур"){
-System(Front,"Витрина")
-System(Catalog,"Каталог")
-System(Processing,"Операции")
+Container(Front,"Витрина")
+Container(Catalog,"Каталог")
+Container(Processing,"Операции")
+Container(APIgateway,"APIgateway")
+SystemQueue(Kafka,"Kafka", "Данные для каталога")
 }
 System_Ext(Netflix,"Netflix")
 
 User -> Front
-Front -> Catalog
-Processing -Up-> Catalog
-Front -> Processing
-Processing -> Netflix
+Front -> APIgateway: авторизация+BFF
+APIgateway -> Catalog:Данные для отрисовки страниц
+Processing -Up-> Catalog: Проверка доступности наших товаров
+APIgateway -> Processing: Оформление заказа
+Processing -> Netflix: Проверка доступности ЦТ
+Processing -> Netflix:  Резервирование ЦТ(Transactional outbox)
 Netflix -> Catalog: данные для карточек
 
 @enduml

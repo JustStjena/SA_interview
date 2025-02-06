@@ -3,6 +3,9 @@
 
 Actor User
 participant Front
+participant Catalog
+participant Processing
+participant Netflix
 'System(Front,"Витрина")
 'System(Catalog,"Каталог")
 'System(Processing,"Операции")
@@ -17,6 +20,17 @@ User -> Front
 Front -> Catalog
 Processing -> Catalog
 Front -> Processing
-Processing -> Netflix: PATCH host/v1/items/{item_id}/buy
+Processing -> Netflix: GET host/v1/items/{item_id}/check
+alt ЦТ доступен
+Processing -> Front: 200 OK
+Processing -> Netflix: PATCH host/v1/items/{item_id}/reserve
+Processing -> Front: готов к оплате
+User -> Front: Оплата
+Front -> Processing: Оплата
+Processing -> Netflix: PATCH host/v1/items/{item_id}/buy(паттерн Outbox)
+else ЦТ отсутствует
+Processing -> Front: 422 "Not avaliable"
+end
+
 
 @enduml

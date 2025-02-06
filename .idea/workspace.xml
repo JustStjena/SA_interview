@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0b353ac-1bb4-4fb2-a338-d2f7a291be4e" name="Changes" comment="init" />
+    <list default="true" id="c0b353ac-1bb4-4fb2-a338-d2f7a291be4e" name="Changes" comment="added ex">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Цифровые товары ММ/siquence.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Цифровые товары ММ/siquence.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Цифровые товары ММ/с4.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Цифровые товары ММ/с4.puml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +27,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="8c2a9ac4-702f-481d-a349-5147be794d52" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 0
@@ -78,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738852105140</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added ex">
+      <option name="closed" value="true" />
+      <created>1738852818241</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738852818241</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="added ex" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ex" />
   </component>
 </project>
