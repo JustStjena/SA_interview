@@ -1,0 +1,14 @@
+@startuml
+!include  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(Creator,"Управление категориями")
+Person(User,"Рассчет бюджета")
+System(Mint, " ")
+Creator -> Mint: POST category/\nDELETE category/{id}\nPATCH transaction/change-category
+User -> Mint: GET budget/\nPOST budget/
+Mint -> User: wh notifications
+System_Ext(Log,Logging)
+System_Ext(Analytics,Analytics)
+Mint -Up-> Log
+Mint -Up-> Analytics
+@enduml

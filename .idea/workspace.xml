@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0b353ac-1bb4-4fb2-a338-d2f7a291be4e" name="Changes" comment="ex SMM">
-      <change afterPath="$PROJECT_DIR$/Цифровые товары ММ/digit_state.puml" afterDir="false" />
+    <list default="true" id="c0b353ac-1bb4-4fb2-a338-d2f7a291be4e" name="Changes" comment="added state diagram">
+      <change afterPath="$PROJECT_DIR$/Mint/ERD.erd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mint/HL.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mint/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mint/c3.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mint/task" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sber/HL.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sber/erd.erd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taxi/Диаграмма без названия.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taxi/ссылки" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Цифровые товары ММ/uc.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +26,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="UML Activity" />
-        <option value="UML Use Case" />
         <option value="Salt Wireframe" />
         <option value="UML Component" />
-        <option value="UML Sequence" />
         <option value="UML State" />
+        <option value="UML Use Case" />
+        <option value="UML Sequence" />
       </list>
     </option>
   </component>
@@ -32,9 +41,9 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="8c2a9ac4-702f-481d-a349-5147be794d52" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2sf7K9hHZckloVzjCezTkX2ZHis" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,23 +52,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML State",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/apple/SA/pythonProject1",
+    "last_opened_file_path": "/Users/apple/SA/pythonProject1/Mint",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Mint" />
+      <recent name="$PROJECT_DIR$/Sber" />
+      <recent name="$PROJECT_DIR$/уч" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/../system_design" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Mint" />
+      <recent name="$PROJECT_DIR$/taxi" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Вахта" />
       <recent name="$PROJECT_DIR$/Сервис заявок" />
-      <recent name="$PROJECT_DIR$/Геом фигуры Самокат" />
-      <recent name="$PROJECT_DIR$/Цифровые товары ММ" />
-      <recent name="$PROJECT_DIR$/Категории  каталоге ММ" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -102,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738857276558</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added state diagram">
+      <option name="closed" value="true" />
+      <created>1738864978197</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738864978197</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +140,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="added ex" />
     <MESSAGE value="ex SMM" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex SMM" />
+    <MESSAGE value="added state diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="added state diagram" />
   </component>
 </project>
